@@ -5,6 +5,31 @@ body{
     background: rgb(124,151,159);
     color: aliceblue;
 }
+.hero{
+    background-image: url('./img/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 450px 0px;
+}
+.hero h1{
+    margin: 0 0 20px;
+    font-size: 2.5em;
+}
+.hero p{
+    margin: 0 0 40px;
+    font-size: 1.2em;
+}
+.hero .btn{
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
 .encabezado2{
     display: flex;
 }
@@ -12,57 +37,41 @@ body{
     display: flex;
     margin: auto;
 }
-.evento{
-    display: flex;
-    justify-content: space-between;
-}
-.proposito, .inscription, .oradores{
-    max-width: 30%;
-    align-items: center;
-    margin: 0 15px
-}
+
 .proposito ul{
     list-style:none;
 }
 .inscription{
     background: linear-gradient(180deg, rgba(124,151,159,1) 0%, rgba(11,25,24,1) 35%, rgba(172,122,83,1) 100%);
 }
-.inscription-resumen, .formulario{
-    max-width: 65rem;
-    margin: auto;
-}
+
 .formulario fieldset{
     text-align: center;
 }
 .inscription-resumen{
 text-align: center;
 }
-.oradores-resumen{
-    max-width: 29rem;
-    text-align: center;
-    margin: auto;
-}
+
 .avatares1 img, .avatares2 img{
     border-radius: 50%;
     box-shadow: 0px 8px 8px 0 rgb(0, 0, 0, 0.15);
-    width: 190px;
+    width: 290px;
 }
-.prestaciones, .conteiner-avatares{
+.prestaciones{
     display: flex;
-    flex-direction: row;
     align-items: center;
     text-align: center;
 }
 .prestaciones img{
-    max-width:65%;
+    max-width:40%;
 }
 .dudas, .focus{
-    margin: 0 80px;
+    margin: 10px auto;
+    align-items: center;
 }
 .conteiner-avatares{
-display: flex;
-}
-.avatares1, .avatares2{
     align-items: center;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
