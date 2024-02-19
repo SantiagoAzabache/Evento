@@ -64,11 +64,6 @@ body {
     list-style: none;
 }
 
-.oradores {
-    display: flex;
-    flex-direction: column;
-}
-
 .oradores-resumen {
     display: flex;
     flex-direction: column;
@@ -95,12 +90,6 @@ body {
 .inscription-resumen {
     text-align: center;
 }
-
-.avatares1 img,
-.avatares2 img {
-    width: 290px;
-}
-
 .prestaciones {
     display: flex;
     align-items: center;
@@ -148,6 +137,28 @@ body {
 .alt-layout {
     flex-direction: row-reverse;
 }
+
+.evento{
+    max-width: 1200px;
+    margin: auto;
+}
+.proposito h2{
+    font-size: 50px;
+}
+.proposito h3{
+    font-size: x-large;
+}
+.proposito p{
+    font-size: large;
+}
+.agenda p{
+    font-size: 25px;
+}
+.fecha, .hora{
+    color: rgb(139, 11, 224);
+    font-weight: bold;
+}
+
 
 @media (max-width:768px) {
     .hero {
