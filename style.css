@@ -1,189 +1,227 @@
 header {
-    display: flex;
+  display: flex;
 }
 
 body {
-    background: rgb(124, 151, 159);
-    color: aliceblue;
-    margin: 0;
+  background: rgb(124, 151, 159);
+  color: aliceblue;
+  margin: 0;
 }
 
 .hero {
-    background-image: url('./img/hero.png');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    text-align: center;
-    height: auto;
-    width: 100%;
-    padding-top: 0px;
-    display: flex;
-    min-height: 101vh;
+  background-image: url("./img/hero.png");
 
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding-top: 0px;
+  display: flex;
+  min-height: 101vh;
 }
 
 .titulo {
-    margin: auto 0px;
-    margin: auto;
+  margin: auto 0px;
+  margin: auto;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .hero p {
-    margin: 0 0 40px;
-    font-size: 1.2em;
+  margin: 0 0 40px;
+  font-size: 1.2em;
 }
 
 .hero .btn {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .encabezado2 {
-    display: flex;
-    position: fixed;
-    right: 0px;
-    margin: auto 10px;
+  display: flex;
+  position: fixed;
+  right: 0px;
+  margin: auto 10px;
 }
 
 .encabezado2 p {
-    display: flex;
-    margin: auto 10px;
-    padding-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: auto 10px;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .proposito ul {
-    list-style: none;
+  list-style: none;
 }
 
 .oradores-resumen {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 25px;
 }
 
 .oradores-resumen h2 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .oradores-resumen p {
-    font-size: larger;
-}
-
-.inscription {
-    background: linear-gradient(180deg, rgba(124, 151, 159, 1) 0%, rgba(11, 25, 24, 1) 35%, rgba(172, 122, 83, 1) 100%);
+  font-size: larger;
 }
 
 .formulario fieldset {
-    text-align: center;
+  text-align: center;
 }
 
 .inscription-resumen {
-    text-align: center;
+  text-align: center;
 }
 .prestaciones {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .prestaciones img {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .dudas,
 .focus {
-    margin: 10px auto;
-    align-items: center;
+  margin: 10px auto;
+  align-items: center;
 }
 
 .conteiner-avatares {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 900px;
+  margin: auto;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .profile-img {
-    flex: 1;
+  flex: 1;
 }
 
 .profile img {
-    width: 350px;
-    height: auto;
-    display: block;
-    border-radius: 200px;
+  width: 350px;
+  height: auto;
+  display: block;
+  border-radius: 200px;
 }
 
 .info {
-    padding: 15px;
+  padding: 15px;
 }
 
 .alt-layout {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.evento{
-    max-width: 1200px;
+.evento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c1f41;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+.proposito {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+.agenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linea {
+  border-bottom: 2px solid #fff;
+  min-width:290px;
+  margin: 50px;
+}
+.horario1 {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  font-size: 40px;
+}
+
+.linea-2 {
+  border-left: 1px solid #fff;
+  height: 60px;
+  margin: 25px;
+}
+.proposito h3 {
+  font-size: x-large;
+}
+.proposito p {
+  font-size: large;
+}
+.agenda h2 {
+  font-size: 60px;
+}
+.horario1 p {
+  font-size: 40px;
+}
+.hora {
+  color: rgb(139, 11, 224);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-width: 29vh;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .profile {
+    flex-basis: 300px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .profile img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .agenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .agenda h2{
+    margin: 20px auto;
+  }
+  .linea {
+    border-left: 2px solid #fff;
     margin: auto;
-}
-.proposito h2{
-    font-size: 50px;
-}
-.proposito h3{
-    font-size: x-large;
-}
-.proposito p{
-    font-size: large;
-}
-.agenda p{
-    font-size: 25px;
-}
-.fecha, .hora{
-    color: rgb(139, 11, 224);
-    font-weight: bold;
-}
-
-
-@media (max-width:768px) {
-    .hero {
-        min-width: 29vh;
-    }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-      }
-    .profile {
-        flex-basis: 300px;
-        max-width: 300px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        margin: 10px;
-        border-radius: 10px;
-        overflow: hidden;
-        background: #fff;
-      }
-      .profile img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-      
+  }
 }
